@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <!--Alumnos: Capone Lautaro, Nombre Apellido -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ViniloMania — Vinilos clásicos</title>
+
+  <!-- Google Fonts: Poppins y Roboto Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">
+        <img src="img/logo2.png" alt="ViniloMania"/>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#destacados">Destacados</a></li>
+        <li><a href="#sobre">Sobre Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 1: INICIO / HERO -->
+    <section id="inicio" class="hero" aria-label="Inicio">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>ViniloMania — El sonido original</h1>
+          <p class="lead">Ediciones cuidadas de los grandes clásicos en vinilo. Encuentra tu próximo disco favorito.</p>
+          <a class="btn" href="#catalogo">Ver catálogo</a>
+        </div>
+
+        <!-- Placeholder de imagen -->
+        <div class="hero-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: CATÁLOGO -->
+    <section id="catalogo" class="section" aria-label="Catálogo">
+      <div class="container">
+        <h2>Catálogo</h2>
+
+        <!-- Contenedor donde main.js cargará las tarjetas de productos dinámicamente -->
+        <!-- Productos cargados desde main.js -->
+        <div id="catalogo-grid" class="catalog-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: DESTACADOS -->
+    <section id="destacados" class="section" aria-label="Destacados">
+      <div class="container">
+        <h2>Ediciones Limitadas / Destacados</h2>
+
+        <!-- Carrusel / galería (vacío por ahora; completar con JS o imágenes reales) -->
+        <!-- Contenido del carrusel completado desde main.js -->
+        <div id="destacados-track" class="carousel-track" role="region" aria-roledescription="carousel"></div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: SOBRE NOSOTROS -->
+    <section id="sobre" class="section" aria-label="Sobre Nosotros">
+      <div class="container about-inner">
+        <!-- columna imagen (estructura, reemplazar luego por imagen real) -->
+        <div class="about-image" aria-hidden="true">
+          <div class="vinyl-placeholder small">♪</div>
+        </div>
+
+        <!-- columna texto -->
+        <div class="about-text">
+          <h2>Sobre Nosotros</h2>
+          <p>ViniloMania es una tienda dedicada a preservar y compartir la experiencia del vinilo. Seleccionamos discos en buen estado, ofrecemos envíos seguros y atención personalizada.</p>
+          <p>Síguenos en nuestras redes para novedades y lanzamientos.</p>
+
+          <!-- Íconos sociales (Font Awesome) -->
+          <div class="socials" aria-label="Redes sociales">
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CONTACTO -->
+    <section id="contacto" class="section" aria-label="Contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+
+        <!-- Formulario: validación y envío simulados en main.js (no incluir action) -->
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" required minlength="2" />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Enviar</button>
+          </div>
+
+          <!-- Mensajes de validación / feedback manejados por main.js -->
+          <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ViniloMania — Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal (sin código inline) -->
+  <script src="main.js" defer></script>
+</body>
+</html>
