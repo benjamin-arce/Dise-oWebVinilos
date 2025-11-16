@@ -1,0 +1,102 @@
+header{
+    background-color: #2d2d2d;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;        /* centra verticalmente */
+    justify-content: space-between; /* mantiene logo y menú separados */
+    padding: 5px 20px;
+    border: 1px solid #2d2d2d;
+
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+/* ===========================
+   HERO — Sección de inicio
+   =========================== */
+
+/* Contenedor general del hero */
+.hero {
+   background-color: #000;
+  background-image: url("img/banner1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 0;
+  color: #fff;
+  margin-top: 12px; /* <-- opción B: separa el banner del header con un margen externo */
+}
+
+/* Coordina el contenido interno */
+.hero-inner {
+  display: flex;                /* coloca texto + imagen en fila */
+  align-items: center;          /* centra verticalmente ambos */
+  justify-content: space-between;
+  gap: 40px;                    /* separación entre texto e imagen */
+}
+
+/* Columna del texto principal */
+.hero-copy {
+  max-width: 500px;             /* limita el ancho para mejor lectura */
+}
+
+/* Botón del hero */
+.btn {
+  display: inline-block;
+  background-color: #b832ff;    /* violeta neón */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  margin-top: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #d362ff;    /* tono más claro al pasar el mouse */
+  transform: scale(1.05);
+}
+
+/* Imagen del hero (si usás <img>, la hacemos responsiva) */
+.hero-art img {
+  width: 100%;
+  max-width: 480px;             /* límite para que no rompa la estructura */
+  border-radius: 10px;          /* suaviza los bordes */
+  box-shadow: 0 0 25px rgba(180, 0, 255, 0.3); /* efecto neón */
+}
+
+/* Responsivo — Para pantallas chicas */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;     /* texto arriba, imagen abajo */
+    text-align: center;
+  }
+
+  .hero-art img {
+    max-width: 350px;
+  }
+}
