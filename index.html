@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <!--Alumnos: Capone Lautaro, Nombre Apellido -->
+  <!--Alumnos: Capone Lautaro, Arce Benjamin -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ViniloMania — Vinilos clásicos</title>
 
-  <!-- Google Fonts: Poppins y Roboto Mono -->
+  
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
 
   <link rel="stylesheet" href="styles.css">
@@ -23,105 +21,81 @@
         <img src="img/logo2.png" alt="ViniloMania"/>
       </a>
       <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#destacados">Destacados</a></li>
-        <li><a href="#sobre">Sobre Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+       <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="productos.html">Catálogo</a></li>
+        <li><a href="index.html#beneficios">Beneficios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <!-- SECCIÓN 1: INICIO / HERO -->
+<main>
+    <!-- SECCIÓN 1: INICIO-->
     <section id="inicio" class="hero" aria-label="Inicio">
       <div class="container hero-inner">
         <div class="hero-copy">
           <h1>ViniloMania — El sonido original</h1>
           <p class="lead">Ediciones cuidadas de los grandes clásicos en vinilo. Encuentra tu próximo disco favorito.</p>
-          <a class="btn" href="#catalogo">Ver catálogo</a>
+          <a class="btn" href="productos.html" rel="noopener noreferrer">Ver catálogo</a>
         </div>
 
-        <!-- Placeholder de imagen -->
         <div class="hero-art" aria-hidden="true"></div>
       </div>
     </section>
 
-    <!-- SECCIÓN 2: CATÁLOGO -->
-    <section id="catalogo" class="section" aria-label="Catálogo">
-      <div class="container">
-        <h2>Catálogo</h2>
-
-        <!-- Contenedor donde main.js cargará las tarjetas de productos dinámicamente -->
-        <!-- Productos cargados desde main.js -->
-        <div id="catalogo-grid" class="catalog-grid" aria-live="polite"></div>
-      </div>
-    </section>
-
-    <!-- SECCIÓN 3: DESTACADOS -->
-    <section id="destacados" class="section" aria-label="Destacados">
-      <div class="container">
-        <h2>Ediciones Limitadas / Destacados</h2>
-
-        <!-- Carrusel / galería (vacío por ahora; completar con JS o imágenes reales) -->
-        <!-- Contenido del carrusel completado desde main.js -->
-        <div id="destacados-track" class="carousel-track" role="region" aria-roledescription="carousel"></div>
-      </div>
-    </section>
-
-    <!-- SECCIÓN 4: SOBRE NOSOTROS -->
-    <section id="sobre" class="section" aria-label="Sobre Nosotros">
-      <div class="container about-inner">
-        <!-- columna imagen (estructura, reemplazar luego por imagen real) -->
-        <div class="about-image" aria-hidden="true">
-          <div class="vinyl-placeholder small">♪</div>
+    <!-- BANNER -->
+    <section class="banner-promo" aria-label="Banner promocional">
+      <div class="container banner-content">
+        <div class="banner-text">
+          <h2>🎵 Oferta Especial - Black Friday</h2>
+          <p>30% de descuento en vinilos clásicos | Envío gratis en compras superiores a $50.000</p>
         </div>
+        <a href="productos.html" class="banner-btn">Ver ofertas</a>
+      </div>
+    </section>
 
-        <!-- columna texto -->
-        <div class="about-text">
-          <h2>Sobre Nosotros</h2>
-          <p>ViniloMania es una tienda dedicada a preservar y compartir la experiencia del vinilo. Seleccionamos discos en buen estado, ofrecemos envíos seguros y atención personalizada.</p>
-          <p>Síguenos en nuestras redes para novedades y lanzamientos.</p>
-
-          <!-- Íconos sociales (Font Awesome) -->
-          <div class="socials" aria-label="Redes sociales">
-            <a href="#" aria-label="Instagram" class="social-link"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook" class="social-link"><i class="fab fa-facebook"></i></a>
-            <a href="#" aria-label="Twitter" class="social-link"><i class="fab fa-twitter"></i></a>
+    <!-- SECCIÓN 2: BENEFICIOS -->
+    <section id="beneficios" class="section" aria-label="Beneficios">
+      <div class="container">
+        <h2>¿Por qué elegir ViniloMania?</h2>
+        
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Envío Rápido</h3>
+            <p>Recibí tus vinilos en 24-48hs en CABA y GBA. Envíos a todo el país.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Calidad Garantizada</h3>
+            <p>Todos nuestros vinilos son cuidadosamente seleccionados y verificados.</p>
+          </div>
+          
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <i class="fas fa-headphones"></i>
+            </div>
+            <h3>Asesoramiento</h3>
+            <p>Nuestro equipo te ayuda a encontrar el vinilo perfecto para tu colección.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SECCIÓN 5: CONTACTO -->
-    <section id="contacto" class="section" aria-label="Contacto">
-      <div class="container">
-        <h2>Contacto</h2>
-
-        <!-- Formulario: validación y envío simulados en main.js (no incluir action) -->
-        <form id="contact-form" class="contact-form" novalidate>
-          <div class="form-row">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" required minlength="2" />
-          </div>
-
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
-          </div>
-
-          <div class="form-row">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
-          </div>
-
-          <div class="form-row">
-            <button type="submit" class="btn">Enviar</button>
-          </div>
-
-          <!-- Mensajes de validación / feedback manejados por main.js -->
-          <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
-        </form>
+    <!-- SECCIÓN 5: LLAMADA A LA ACCIÓN -->
+    <section id="cta" class="section cta-section" aria-label="Llamada a la acción">
+      <div class="container cta-content">
+        <h2>¿Listo para ampliar tu colección?</h2>
+        <p class="cta-text">Descubrí nuestra selección completa de vinilos clásicos y ediciones especiales.</p>
+        <div class="cta-buttons">
+          <a href="productos.html" class="btn btn-primary">Ver catálogo completo</a>
+          <a href="contacto.html" class="btn btn-secondary">Contactanos</a>
+        </div>
       </div>
     </section>
   </main>
@@ -131,14 +105,13 @@
     <div class="container footer-inner">
       <p>&copy; <span id="year"></span> ViniloMania — Todos los derechos reservados.</p>
       <div class="footer-links">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   </footer>
 
-  <!-- Script principal (sin código inline) -->
   <script src="main.js" defer></script>
 </body>
 </html>

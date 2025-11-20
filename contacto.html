@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+<head>
+  
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ViniloMania — Vinilos clásicos</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- HEADER / NAVEGACIÓN -->
+  <header>
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio">
+        <img src="img/logo2.png" alt="ViniloMania"/>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="productos.html#catalogo">Catálogo</a></li>
+        <li><a href="index.html#beneficios">Beneficios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- SECCIÓN 5: CONTACTO -->
+    <section id="contacto" class="section" aria-label="Contacto">
+      <div class="container">
+        <h2>Contacto</h2>
+
+        <!-- Formulario-->
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="nombre" type="text" required minlength="2" />
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required minlength="10"></textarea>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Enviar</button>
+          </div>
+
+          <div id="form-feedback" class="form-feedback" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: SOBRE NOSOTROS -->
+    <section id="sobre" class="section" aria-label="Sobre Nosotros">
+      <div class="container about-inner">
+
+        <div class="about-image" aria-hidden="true">
+          <div class="vinyl-placeholder small">♪</div>
+        </div>
+
+        <div class="about-text">
+          <h2>Sobre Nosotros</h2>
+          <p>ViniloMania es una tienda dedicada a preservar y compartir la experiencia del vinilo. Seleccionamos discos en buen estado, ofrecemos envíos seguros y atención personalizada.</p>
+          <p>Síguenos en nuestras redes para novedades y lanzamientos.</p>
+
+          <div class="socials" aria-label="Redes sociales">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> ViniloMania — Todos los derechos reservados.</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
